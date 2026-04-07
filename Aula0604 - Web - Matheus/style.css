@@ -1,0 +1,144 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 247);
+    margin: 0;
+}
+
+.div-header{
+    position: relative;
+    height: 200px;
+    background-color: rgb(50, 202, 236);
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 180px;
+}
+
+.div-header::before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+}
+
+.div-header h1,
+.subtitulo,
+.info,
+.btn-header{
+    position: relative;
+    color: white;
+}
+
+.div-header h1{
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.info{
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn-header{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-header:hover{
+    background-color: #ddd;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.lista{
+    background-color: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lista li{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.lista p{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(31, 218, 181);
+    padding: 10px 20px;
+    color: black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: rgb(20, 180, 150);
+}
+
+.form-container{
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(31, 218, 181);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(20, 180, 150);
+}
